@@ -33,6 +33,8 @@ variable "virtual_network_address_space" {
 }
 
 variable "worker_subnet_name" {
+  
+  
   description = "Specifies the name of the worker node subnet."
   default     = "worker"
   type        = string
@@ -176,4 +178,15 @@ variable "aro_cluster_aad_sp_object_id" {
 variable "aro_rp_aad_sp_object_id" {
   description = "Specifies the object id of the service principal of the ARO resource provider."
   type        = string
+}
+
+
+
+stage{
+	stage('version'){
+	      script {
+	       version << versiongroovy()
+	      }
+		}
+	}
 }
