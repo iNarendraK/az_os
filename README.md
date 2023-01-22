@@ -4,3 +4,11 @@
 
 ![image](https://user-images.githubusercontent.com/49773554/207273674-23af7e54-0b80-477f-8b07-94d4044ccb7c.png)
 
+
+
+def call(){
+	dir("${env.workspace}')/$(env.SERVICE_PATH)" {
+	  sh "version='1.0.0'"
+	  sh  "echo ${version}"
+	}
+}
