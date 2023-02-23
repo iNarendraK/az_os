@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Define variables
+jenkins_url="http://<jenkins-server>:<port>/job/<job-name>/buildWithParameters?param1=value1&param2=value2"
+num_of_runs=5
+
+# Loop through the number of runs and trigger the Jenkins job each time
+for i in $(seq 1 $num_of_runs); do
+    curl -X POST "${jenkins_url}"
+done
+
+
+
+Here's how to use the script:
+
+    Replace <jenkins-server> and <port> with the URL and port of your Jenkins server, respectively.
+    Replace <job-name> with the name of the Jenkins job that you want to trigger.
+    Replace param1=value1&param2=value2 with the parameters and their values that your Jenkins job expects. If your Jenkins job doesn't expect any parameters, you can remove this part of the URL.
+    Replace num_of_runs with the number of times you want to trigger the Jenkins job.
+
+Save the script as a file, e.g. run-jenkins-job.sh, and make it executable by running the following command:chmod +x run-jenkins-job.sh
+Then, run the script by running the following command: ./run-jenkins-job.sh
