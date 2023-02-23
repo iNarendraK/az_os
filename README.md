@@ -12,12 +12,13 @@ def call(){
 	  sh  "echo ${version}"
 	}
 }
-========================================================================================================================
 
+
+1
 #!/bin/bash
 for i in {1..5}
 do
-   # Replace <JENKINS_JOB_NAME> with the actual name of your Jenkins job
+   Replace <JENKINS_JOB_NAME> with the actual name of your Jenkins job
    curl -X POST https://<JENKINS_SERVER>/job/<JENKINS_JOB_NAME>/build --user <JENKINS_USERNAME>:<JENKINS_API_TOKEN>
 done
 
@@ -34,12 +35,12 @@ command:
 chmod +x run-jenkins-job.sh
 
 Then, run the script by running the following command:
-./run-jenkins-job.sh
-==================================================================
+dot/run-jenkins-job.sh
 
+2
 #!/bin/bash
 
-# Define variables
+#Define variables
 jenkins_url="http://<jenkins-server>:<port>/"
 job_name="<job-name>"
 username="<jenkins-username>"
@@ -66,7 +67,9 @@ chmod +x run-jenkins-job.sh
 
 Then, run the script by running the following command:
 ./run-jenkins-job.sh
-===========================================================================================================
+
+	
+	3
 
 #!/bin/bash
 
