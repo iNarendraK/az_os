@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Define variables
+jenkins_url="http://<jenkins-server>:<port>/"
+job_name="<job-name>"
+username="<jenkins-username>"
+api_token="<jenkins-api-token>"
+num_of_runs=5
+
+# Loop through the number of runs and trigger the Jenkins job each time
+for i in $(seq 1 $num_of_runs); do
+    curl -X POST "${jenkins_url}/job/${job_name}/build" \
+    --user "${username}:${api_token}" \
+    --header "Jenkins-Crumb:<jenkins-crumb>"
+done
