@@ -96,4 +96,7 @@ chmod +x run-jenkins-job.sh
 Then, run the script by running the following command:
 ./run-jenkins-job.sh
 
+curl -X POST https://jenkins.example.com/job/MyJob/build --user user:password
+java -jar jenkins-cli.jar -s https://jenkins.example.com/ -auth user:password build MyJob
+https://jenkins.example.com/job/MyJob/buildWithParameters?param1=value1&param2=value2
 
