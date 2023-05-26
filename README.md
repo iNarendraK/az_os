@@ -1,4 +1,45 @@
+Tracking who deleted policy sets in Terraform Enterprise requires monitoring and auditing of the system. Here are some steps you can follow to enhance the tracking capabilities:
 
+    Enable Audit Logging: In your Terraform Enterprise (TFE) instance, ensure that audit logging is enabled. Audit logs capture activities performed by users within TFE, including policy set deletions. Enabling audit logging is typically done through the TFE administration console or configuration files.
+
+    Configure Log Storage: Specify where the audit logs should be stored. You can configure TFE to send audit logs to a centralized log management system or store them locally within TFE. Centralized logging solutions like Elasticsearch, Splunk, or an equivalent service can help you aggregate and analyze logs effectively.
+
+    Monitor Audit Logs: Regularly monitor the audit logs to identify policy set deletions. Look for relevant log entries that indicate deletions and record the details such as the user responsible, timestamp, and any additional contextual information provided in the logs.
+
+    Set up Notifications: Consider implementing notifications or alerts to receive real-time notifications when policy sets are deleted. This can be achieved by integrating TFE's audit logs with a monitoring or alerting system, such as Slack, email, or a custom solution. Configure the alerts to trigger based on specific log patterns related to policy set deletions.
+
+    Access Control and Permissions: Review and manage user access control and permissions within TFE. Ensure that only authorized users have the necessary privileges to delete policy sets. Regularly audit and update user permissions based on the principle of least privilege.
+
+    Incident Response and Investigation: In the event of a policy set deletion, initiate an incident response process. Analyze the audit logs, gather relevant information, and investigate the incident further to determine the cause and responsible party. If necessary, involve relevant stakeholders, such as security teams or administrators.
+
+By following these steps, you can establish a process for tracking and investigating policy set deletions within Terraform Enterprise.
+
+
+
+
+In Terraform Enterprise, tracking who deleted policy sets can be achieved by leveraging the audit log functionality. The audit log provides a record of actions performed within the Terraform Enterprise organization, including policy set deletions. Follow these steps to track who deleted policy sets:
+
+    Log in to the Terraform Enterprise web interface using your administrator account.
+
+    Navigate to the "Settings" section or the equivalent administrative area in your Terraform Enterprise installation.
+
+    Look for the "Audit Logs" or "Activity Logs" option. It may be under a "Logging" or "Security" category.
+
+    Access the audit log interface, which should display a list of events and actions performed within the organization.
+
+    Search or filter the log entries based on the relevant criteria. In this case, you can look for events related to policy set deletions.
+
+    Review the filtered log entries to identify the action of deleting a policy set. Each log entry typically includes details such as the user who performed the action, the timestamp, and other relevant information.
+
+    Analyze the log entry to determine the user responsible for deleting the policy set. Make note of the user's name or unique identifier.
+
+    If available, you can further investigate the user's activities by checking additional log entries related to their actions during the same time frame.
+
+By following these steps, you should be able to track who deleted policy sets in Terraform Enterprise using the audit log functionality. Remember that the specific steps or interface options may vary depending on the version and configuration of Terraform Enterprise you are using.
+
+
+
+=========================================================================================
 Adding filters to Splunk dashboards allows users to interactively explore and analyze data in real-time, providing valuable insights that can help with troubleshooting, monitoring, and decision-making.
 
 Here are some of the main reasons why filters are commonly used in Splunk dashboards:
