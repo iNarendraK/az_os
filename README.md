@@ -1,3 +1,31 @@
+    Achievements:
+
+    I successfully completed my tickets ahead of schedule, demonstrating my ability to manage time effectively and deliver high-quality work.
+    I consistently met or exceeded my performance targets in completeing the tasks, contributing to the overall success of the team.
+    I proactively took on additional responsibilities, and successfully handled them while maintaining my regular workload.
+    
+	Areas for Improvement:
+	
+    I understand that I need to enhance my proficiency in groovy scripting to increase my productivity and effectiveness in my role.
+    I acknowledge that I could improve my communication skills, particularly in terms of effectively conveying complex information to leadership team.
+    I recognize the need to enhance my time management skills to ensure more efficient completion of tasks and projects.
+    I am working on strengthening my collaboration skills by actively seeking out input from colleagues and providing more constructive feedback from team mates.
+    I am actively seeking opportunities to develop my leadership skills by taking on more responsibility and seeking mentorship opportunities.
+
+    Goals for the remainder of the year:
+
+    I plan to take the certification on Azure, Terrafom and OpenShift for this balance year.
+	I aim to further improve my project management skills by taking on more complex and challenging projects and consistently meeting deadlines.
+    I will actively seek feedback from my colleagues and supervisors to continue enhancing my skills and addressing areas for improvement.
+    I aim to foster stronger relationships with team members and improve overall collaboration by actively participating in team-building activities.
+    I will work on refining my presentation skills to effectively communicate ideas and proposals.
+
+
+
+
+
+
+
 Tracking who deleted policy sets in Terraform Enterprise requires monitoring and auditing of the system. Here are some steps you can follow to enhance the tracking capabilities:
 
     Enable Audit Logging: In your Terraform Enterprise (TFE) instance, ensure that audit logging is enabled. Audit logs capture activities performed by users within TFE, including policy set deletions. Enabling audit logging is typically done through the TFE administration console or configuration files.
