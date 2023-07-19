@@ -1,3 +1,5 @@
+
+
 Using the mock feature, you can perform actions such as plan, apply, and destroy operations without making any changes to your 
 actual infrastructure. Instead, Terraform will simulate the execution and display the expected outcomes based on your 
 configuration and the current state of your infrastructure.
@@ -33,6 +35,44 @@ With mocks, you can simulate resource creation, modification, deletion, and othe
 By leveraging mocks, you can gain confidence in your infrastructure provisioning process before applying changes to your production environment. It helps ensure that your Terraform configurations are correct and perform as expected, reducing the risk of unintended consequences.
 
 Note that mocks are specific to Terraform Enterprise and may not be available in other Terraform workflows or versions.
+
+User
+how to setup mock terraform enterprise 
+ChatGPT
+5 / 5
+
+As of my last update in September 2021, Terraform Enterprise (TFE) has been replaced by Terraform Cloud. If you are looking to set up a mock version of Terraform Enterprise for testing or learning purposes, you can use Terraform Cloud's free tier, which provides many of the same features as Terraform Enterprise.
+
+Here's a step-by-step guide to setting up a mock Terraform Enterprise using Terraform Cloud:
+
+    Sign up for a Terraform Cloud account:
+        Go to the Terraform Cloud website (https://app.terraform.io/signup/account) and sign up for a free account.
+
+    Create a new organization:
+        Once you have signed up and logged in to your Terraform Cloud account, create a new organization. The organization serves as a workspace for your projects.
+
+    Create a new workspace:
+        Within your organization, create a new workspace. Workspaces are used to manage different configurations or environments for your infrastructure.
+
+    Connect your version control system (VCS) repository:
+        Link your VCS repository (GitHub, GitLab, Bitbucket) to your workspace. This will allow Terraform Cloud to automatically detect changes in your Terraform configuration files and apply them.
+
+    Configure variables:
+        Define variables in your workspace to customize your infrastructure settings for different environments (e.g., development, staging, production).
+
+    Set up the execution mode:
+        Choose how you want Terraform Cloud to execute your Terraform configurations: in auto-apply mode (automatically apply changes) or manual-apply mode (wait for manual confirmation).
+
+    Queue a run:
+        Queue a new run in your workspace to apply the Terraform configuration. You can either trigger runs manually or set up a webhook in your VCS repository to automatically trigger runs on code changes.
+
+    Monitor and manage runs:
+        Once a run is initiated, you can monitor its progress, view logs, and manage the state of your infrastructure within Terraform Cloud.
+
+Remember, this is a mock setup using Terraform Cloud's free tier, which provides a similar experience to Terraform Enterprise for small teams and individual users. For larger teams or organizations with advanced features, you might need to consider purchasing a subscription to Terraform Cloud's paid tiers or using Terraform Enterprise (if it's still available under a different name).
+
+Please note that the steps or user interface might change over time, so refer to the Terraform Cloud documentation for the most up-to-date instructions: https://www.terraform.io/docs/cloud/index.html.
+
 
 To set up a mock Terraform Enterprise environment, you can follow these general steps:
 
