@@ -1,3 +1,21 @@
+
+I am here to share my latest project with you all! it is with the AWS #Terraform project. This entire project is created and #automated using the #IAC Tool
+#terraform with the #AWS. ⚜ ⚜ ⚜ 
+
+Inbrief:
+
+📢  VPC & Subnet Setup: Utilizing Terraform, I've automated the creation of a Virtual Private Cloud (VPC) in public subnets in the availability zones, ensuring fault tolerance and high availability.
+
+📢  EC2 Instance Deployment: With Terraform, I've seamlessly provisioned an 2 EC2 instance within the VPC on each availability zones, configuring it with the necessary security groups and network settings.
+
+📢 We have created the Application Load balancer and configured it on both subnets and with the security group.
+
+📢 Additionally, we have secured the #TerraformStatefile in the AWS #S3 bucket as a #Backend Configuration. so, only the authorized #IAMuser or role can only access the #Terraform.tfstate file.
+
+📢  Application Deployment: Taking it a step further, I've employed Terraform to deploy an application onto the EC2 instance. its an HTML file with the portfolio content and display ALB DNS as a output of to access the applications, all automated through Terraform!
+
+🔔 By using the #Terraform. this entire project is created and deployed by the automation. 
+
 In Terraform Enterprise, a "mock" refers to a feature that allows you to simulate Terraform operations without actually executing them.
  It is commonly used for testing and development purposes, providing a way to validate your Terraform configurations and workflows 
  before applying them to your infrastructure.
